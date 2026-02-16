@@ -22,3 +22,9 @@ Git — це система керування версіями, що дозво
 
 ### Conclusions
 During this work-case, we have successfully set up a shared Git repository. We learned how to track changes using commits and how to collaborate as a team. Git is an essential tool for modern operating systems development and software engineering in general.
+
+## 4. Team Contributions
+- **Member 1 ([DimitriyArch])**: Initialized repo, wrote theory.
+- **Member 2 ([Tingem])**: Added English vocabulary and conclusions.
+- **Member 3 ([PashaGo2007])**: Formatted the Markdown file.
+
