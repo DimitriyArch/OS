@@ -89,3 +89,22 @@
 У Linux можлива одночасна реєстрація кількох сеансів під одним і тим же системним ім’ям користувача, наприклад через різні віртуальні консолі або графічні сесії. Це дозволяє паралельно виконувати різні завдання, розділяти роботу в окремих сеансах, тестувати команди або програми без переривання основної роботи, а також спрощує віддалений доступ до системи під тим самим користувачем з кількох терміналів або через SSH.
 
 ---
+## Англійський словник (Vocabulary)
+| Термін | Опис |
+| :--- | :--- |
+| **Virtual Machine (VM)** | Software simulation of a physical computer. |
+| **Distribution (Distro)** | Version of Linux that includes the kernel, a set of software, and management tools. |
+| **Interface** | Tool for user interaction with the system (GUI or CLI). |
+| **Package Manager** | Tool for automating the installation and updating of software. |
+| **Quick Access Panel** | Graphical element (Dock) for quick access to applications. |
+| **Desktop** | Main screen space of the graphical interface. |
+
+---
+
+## Висновок (Conclusion)
+During the completion of Laboratory Work №. 2, "Introduction to the Interface and Capabilities of the Linux OS," I became familiar with both the graphical and text-based interfaces of the Linux operating system. I learned to work with the command line in the CLI and virtual consoles, explored the desktop structure, and studied the main components of the graphical environment (menus, quick access panels, search, and workspaces). I also gained an understanding of various Linux shells (sh, csh, Bash, tcsh, Ksh, zsh), package managers, and system security tools. I grasped the principles of virtualization and containerization, as well as the advantages and disadvantages of open-source software. The knowledge and practical skills acquired allow me to navigate the Linux environment effectively, run programs in multiple ways, manage user sessions, and ensure a basic level of system security. This work laid the foundation for further mastering the administrative and practical aspects of working with the Linux OS.
+
+## Team Contributions
+- **Member 1 ([DimitriyArch])**: Completed the work in a mobile operating system environment and formatted the Markdown file.
+- **Member 2 ([PashaGo2007])**: Added English vocabulary and conclusions.
+- **Member 3 ([Tingem])**: Completed the work in the graphical environment GNOME and answered the control questions.
