@@ -23,7 +23,16 @@
 | `ls` | Displays information about directories and files. By default, without arguments, it shows information for the current directory. |
 | `ls -l` | Using the `-l` option with the `ls` command displays information about files in the current working directory in long format, which provides more detailed additional information. |
 | `ls -l /tmp` | Using the `/tmp` argument together with the `-l` option in the `ls` command displays detailed information about the files in the `/tmp` directory. |
-
+ | `whoami` | Displays the username of the currently logged-in user. |
+| `pwd` | Prints the current working directory (the full path to the directory you are in). |
+| `history` | Shows a list of previously executed commands in the current shell session. |
+| `echo Text` | Prints the specified text (in this case, “Text”) to the terminal. |
+| `date` | Displays the current system date and time. |
+| `man date` | Opens the manual (help documentation) page for the `date` command. |
+| `man -k password` | Searches the manual page descriptions for the keyword “password”. |
+| `sudo --help` | Displays help information and usage instructions for the `sudo` command. |
+| `ls -al` | Lists all files and directories (including hidden ones) in long format, showing detailed information such as permissions, owner, size, and modification date. |
+| `locate spotify` | Searches for files and directories on the system whose names contain the word “spotify” (using a prebuilt file index database). |
 
 ---
 
