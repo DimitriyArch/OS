@@ -23,17 +23,7 @@
 | `ls` | Displays information about directories and files. By default, without arguments, it shows information for the current directory. |
 | `ls -l` | Using the `-l` option with the `ls` command displays information about files in the current working directory in long format, which provides more detailed additional information. |
 | `ls -l /tmp` | Using the `/tmp` argument together with the `-l` option in the `ls` command displays detailed information about the files in the `/tmp` directory. |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
+
 
 ---
 
@@ -117,7 +107,7 @@
     <img src="https://github.com/user-attachments/assets/fe7ee984-15f0-4162-a845-02b105208d05" width="507"/>
   </p>
 
-Різниця полягає в правах доступу користувача: якщо в кінці рядка запрошення Bash стоїть символ $, як у записі [centos@localhost Desktop]$, це означає, що в системі працює звичайний користувач із обмеженими правами, а якщо в кінці стоїть символ #, як у записі [root@localhost Desktop]#, це означає, що виконання відбувається від імені суперкористувача root, який має повні адміністративні права та може змінювати системні файли й налаштування.
+Різниця полягає в правах доступу користувача: якщо в кінці рядка запрошення Bash стоїть символ "$", як у записі [centos@localhost Desktop]$, це означає, що в системі працює звичайний користувач із обмеженими правами, а якщо в кінці стоїть символ "#", як у записі [root@localhost Desktop]#, це означає, що виконання відбувається від імені суперкористувача root, який має повні адміністративні права та може змінювати системні файли й налаштування.
   
 ### 8. Яке призначення команд whereis та locate? Яка між ними відмінність?
 
