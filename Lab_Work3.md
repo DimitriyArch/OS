@@ -125,7 +125,13 @@
 ---
 
 ## Висновок (Conclusion)
+During this lab work on the topic “Introduction to Basic CLI Commands in Linux”, the main objectives were successfully achieved.
 
+First, we became familiar with the basic principles of working in the Command Line Interface (CLI) environment of a GNU/Linux operating system. We learned how to navigate the file system, identify the current user and directory, view command history, display system date and time, and search for files.
+
+Second, we practiced using essential text-based commands such as whoami, pwd, history, echo, date, man, sudo, ls, and locate. This helped us understand how Linux commands are structured, how options (flags) modify command behavior, and how to access built-in documentation using manual pages.
+
+Additionally, we gained experience working in a virtualized environment using Oracle VirtualBox and interacting with Linux alongside Windows OS. This improved our practical skills in configuring and using different operating systems within one hardware platform.
 
 
 ---
