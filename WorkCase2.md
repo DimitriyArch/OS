@@ -11,27 +11,62 @@
 ---
 
 ### Процес встановлення:
-
-
-
+<p align="center">
+  <br>
+  <img src="https://github.com/user-attachments/assets/f118745b-0d46-414b-b2a8-cb2523a72a55" width="482"/>
+  <br>
+  <b>Скріншот 1</b> — Початок встановлення Oracle Virtual Box
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/9ce70603-9943-4f5b-9bf6-e46cd829bbc3"/>
+  <br>
+  <img src="https://github.com/user-attachments/assets/ff5ff35c-ebb0-47e5-bcd0-b5c09a3cdc4e"/>
+  <br>
+  <b>Скріншот 2,3</b> — Процесс встановлення Oracle Virtual Box
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/e911997e-52e4-4341-bd47-46fb6028d23e"/>
+  <br>
+  <b>Скріншот 4</b> — Завершення встановлення Oracle Virtual Box
+  <br>
+  </p>
+  
 ---
 
 ## 2. Базові дії у гіпервізорі
 ### 2.1 — Створення нової віртуальної машини
 
-
+<p align="center">
+ <br><br>
+ <img src="https://github.com/user-attachments/assets/4e62138f-9a61-4de5-9ec3-64ecd8fd838c"/>
+ <br><br>
+ <img src="https://github.com/user-attachments/assets/d833f2ce-abf9-4bd6-99cb-f3dae56209d6"/>
+ <br><br>
+ <img src="https://github.com/user-attachments/assets/bf1f1d6f-d6b0-41b6-ba9d-673c934efb80"/>
+ <br><br>
+</p>
 
 ### 2.2 — Вибір/додавання доступного для віртуальної машини обладнання
 
-
-
+<p align="center">
+ <br><br>
+ <img src="https://github.com/user-attachments/assets/1490d61a-2d0c-496b-8306-fbb7d9a07595"/>
+ <br><br>
+ </p>
+ 
 ### 2.3 — Налаштування мережі та підключення до точок Wi-Fi
 
-
-
+ <p align="center">
+ <br><br>
+ <img src="https://github.com/user-attachments/assets/7a234f8a-ab46-4ff4-ac6a-68f9a242e197"/>
+ <br><br>
+ </p>
+ 
 ### 2.4 — Можливість роботи з зовнішніми носіями
 
-
+<p align="center">
+ <br><br>
+ <img src="https://github.com/user-attachments/assets/05527907-2169-467c-8b45-9f25fb5d8ef1"/>
+ <br><br>
+ </p>
 
 ---
 
