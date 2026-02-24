@@ -140,17 +140,11 @@ External Storage (USB Flash Drive) – A removable device used to store and tran
 
 GNU/Linux Distribution – A specific version of Linux that includes the kernel and additional software such as Ubuntu or Debian
 
-Basic Configuration – A standard installation with default settings and a graphical interface
-
-Minimal Configuration – An installation with only essential components, usually without a graphical interface
-
 CLI (Command Line Interface) – A text-based way to interact with the operating system using commands
 
 GUI (Graphical User Interface) – A visual interface with windows, icons, and menus
 
 GNOME – A popular Linux desktop environment that provides a graphical interface
-
-Desktop Environment – A collection of graphical components that create the user interface in Linux
 
 Compare Features – To analyze differences in functionality, performance, and usability between systems
 
