@@ -106,13 +106,7 @@
 ---
 
 ## 5. Порівняння GNOME та KDE Plasma
-| Критерій | GNOME | KDE Plasma |
-| :--- | :--- | :--- |
-| | |
-| | |
-| | |
-| | |
-| | |
+
 
 | **Критерій**              | **GNOME**                                          | **KDE Plasma**                                       |
 | ------------------------- | -------------------------------------------------- | ---------------------------------------------------- |
@@ -129,6 +123,38 @@
 
 
 ---
+
+## Англійський словник 
+
+Type 2 Hypervisor – Software that runs on a host operating system and allows you to create and manage virtual machines (for example VirtualBox or VMware Workstation)
+
+VirtualBox / VMware Workstation / Hyper-V – Programs used to create and manage virtual machines
+
+Create a Virtual Machine – The process of setting up a new virtual environment with its own operating system, CPU, RAM, and storage
+
+Virtual Hardware – Simulated components such as virtual CPU, RAM, hard disk, and network adapter assigned to a virtual machine
+
+Network Configuration – Setting how a virtual machine connects to the internet or local network (for example NAT or Bridged mode)
+
+External Storage (USB Flash Drive) – A removable device used to store and transfer data, which can be connected to a virtual machine
+
+GNU/Linux Distribution – A specific version of Linux that includes the kernel and additional software such as Ubuntu or Debian
+
+Basic Configuration – A standard installation with default settings and a graphical interface
+
+Minimal Configuration – An installation with only essential components, usually without a graphical interface
+
+CLI (Command Line Interface) – A text-based way to interact with the operating system using commands
+
+GUI (Graphical User Interface) – A visual interface with windows, icons, and menus
+
+GNOME – A popular Linux desktop environment that provides a graphical interface
+
+Desktop Environment – A collection of graphical components that create the user interface in Linux
+
+Compare Features – To analyze differences in functionality, performance, and usability between systems
+
+--- 
 
 ## Висновок (Conclusion)
 
