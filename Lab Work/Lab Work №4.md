@@ -215,7 +215,7 @@ cat /proc/version
     <summary>Скріншот</summary>
     <table>
       <tr>
-        <td><img width="376" height="184" src="https://github.com/user-attachments/assets/ec78ec72-d031-4f28-8752-0085598716ed"</td>
+        <td><img width="497" height="137" src="https://github.com/user-attachments/assets/2a69ba34-156e-4517-97e6-59cb6e06dd69"/></td>
       </tr>
     </table>
   </details>
