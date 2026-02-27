@@ -21,7 +21,7 @@
   <br>
   <img src="https://github.com/user-attachments/assets/ff5ff35c-ebb0-47e5-bcd0-b5c09a3cdc4e"/>
   <br>
-  <b>Скріншот 2,3</b> — Процесс встановлення Oracle Virtual Box
+  <b>Скріншот 2, 3</b> — Процесс встановлення Oracle Virtual Box
   <br><br>
   <img src="https://github.com/user-attachments/assets/e911997e-52e4-4341-bd47-46fb6028d23e"/>
   <br>
@@ -77,16 +77,52 @@
 * CPU — 2 Core
 * Disk — 25 GB
 
+<p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/e782a478-6d50-4553-9de5-79b8b90b5fda"/>
+ <br><br>
+ </p>
+
 ### Етапи встановлення:
 1. Завантаження ISO.
-2. Запуск інсталятора.
+
+<p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/a6a1e3c0-9d99-419a-a347-96f846320194"/>
+ <br><br>
+ </p>
+ 
 3. Вибір "Install Ubuntu" -> "Interactive installation" -> "Standard installation"
+
+  <p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/422daea3-3799-41e1-982a-27f9311a10ff"/>
+ <br><br>
+ </p>
+ 
 4. Створення користувача.
+
+  <p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/15dafa8d-7255-4601-9204-df0994f38aec"/>
+ <br><br>
+ </p>
+
 5. Перезавантаження
+
+  <p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/369a3842-60be-4416-89a5-be98ed8ed1f9"/>
+ <br><br>
+ </p>
 
 У підсумку маємо встановлений дистрибутив GNU/Linux Ubuntu з графічною оболонкою GNOME.
 
-
+  <p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/5013817f-a388-48c8-88e4-92f62743d64e"/>
+ <br><br>
+ </p>
 
 ---
 
@@ -95,18 +131,45 @@
 ### Параметри:
 * RAM — 2048 MB
 * CPU — 2 Core
-* Disk — 20 GB
+* Disk — 30 GB
 
-### 4.1 
+### 4.1 — Запуск Ubuntu Server та встановлення GNOME
 
-### 4.2
+  <p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/eeab4c8f-39be-4899-afca-6c93bcbf1b77"/>
+ <br><br>
+ </p>
 
-### 4.3
+### 4.2 — Ubuntu Server з чистим GNOME
+
+  <p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/e143823e-f155-43d1-8156-d2cd405762c1"/>
+ <br><br>
+ </p>
+
+### 4.3 — Встановлення додатково KDE Plasma
+
+  <p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/ed186dae-1752-4e5f-aa39-c06207fd84cd"/>
+ <br><br>
+ </p>
+
+### 4.4 — Ubuntu Server з KDE Plasma
+
+<p align="center">
+ <br>
+ <img src="https://github.com/user-attachments/assets/ef497d9b-0c5d-408e-885b-7700938366d9"/>
+  <br>
+  <img src="https://github.com/user-attachments/assets/44dfb131-ee77-4399-a8eb-12e69397197c"/>
+ <br><br>
+ </p>
 
 ---
 
 ## 5. Порівняння GNOME та KDE Plasma
-
 
 | **Критерій**              | **GNOME**                                          | **KDE Plasma**                                       |
 | ------------------------- | -------------------------------------------------- | ---------------------------------------------------- |
@@ -121,10 +184,9 @@
 | **Підтримка Wayland**     | Активна, добре реалізована                         | Також добре підтримується                            |
 | **Цільова аудиторія**     | Користувачі, що цінують простоту                   | Користувачі, що люблять гнучке налаштування          |
 
-
 ---
 
-## Англійський словник 
+## Англійський словник (English vocabulary)
 
 Type 2 Hypervisor – Software that runs on a host operating system and allows you to create and manage virtual machines (for example VirtualBox or VMware Workstation)
 
@@ -153,7 +215,6 @@ Compare Features – To analyze differences in functionality, performance, and u
 ## Висновок (Conclusion)
 
 Продемонстрували практичні можливості гіпервізора другого типу, створення та налаштування віртуальних машин із різними конфігураціями, а також встановлення Linux-систем у GUI та CLI варіантах. Порівняння GNOME і KDE Plasma показало відмінності в підходах до інтерфейсу та налаштування середовища. Отриманий результат підтверджує ефективність використання віртуалізації для тестування, адміністрування та аналізу операційних систем.
-
 
 ---
 
