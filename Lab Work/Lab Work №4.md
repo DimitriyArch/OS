@@ -17,14 +17,15 @@
 ---
 
 ## 1. Відповіді на питання попередньої підготовки
-### 1.1 
+
+### 1.1 — Команди моніторингу процесів
 Найпоширенішою є команда `ps`, яка відображає список активних процесів, наприклад у форматі `ps aux` або `ps -ef`. Для перегляду процесів у режимі реального часу застосовується команда `top`, яка динамічно оновлює інформацію про використання процесора та пам’яті. Також існує більш зручна інтерактивна версія — `htop`, якщо вона встановлена в системі.
 Для відображення ієрархії процесів у вигляді дерева використовується `pstree`, для пошуку процесу за ім’ям — `pgrep`, а для надсилання сигналів процесам (наприклад, завершення) — команда `kill`.
 
-### 1.2 
-Ні, команда `ps` не відстежує стан процесів у реальному часі. Вона відображає знімок (snapshot) стану процесів на момент виконання команди. Для моніторингу процесів у реальному часі в використовують команди `top` або `htop`, які постійно оновлюють дані на екрані через певні інтервали часу.
+### 1.2 — Команда `ps` не відстежує стан процесів у реальному часі
+Вона відображає знімок (snapshot) стану процесів на момент виконання команди. Для моніторингу процесів у реальному часі в використовують команди `top` або `htop`, які постійно оновлюють дані на екрані через певні інтервали часу.
 
-### 1.3 
+### 1.3 — Сортування процесів в команді `top`
 За замовчуванням `top` сортує процеси за відсотком використання CPU.
 
 Переключення між параметрами сортування виконується безпосередньо під час роботи програми шляхом натискання відповідних клавіш:
@@ -39,7 +40,7 @@
 
 Також можна натиснути `f`, щоб зайти в меню керування полями, де можна вибрати інший стовпець для сортування, а клавіша `R` дозволяє змінити порядок сортування (за зростанням або спаданням).
 
-### 1.4 
+### 1.4 — Команди завершення процесів
 
 * `kill` — надсилання сигналу процесу за його PID (наприклад, kill 1234, за замовчуванням надсилається SIGTERM).
 
@@ -52,67 +53,175 @@
 ---
 
 ## 2. Відповіді на питання
-### 2.1 
 
-### 2.2 
+### 2.1 — Виведення вмісту директорії `/proc` командою `ls`.
 
-### 2.3 
+<p align="center">
+ <img width="400" height="661,157024792" src="https://github.com/user-attachments/assets/79503a97-e8af-40a6-9d8c-24d6a00288d1" />
+ <br>
+</p>
 
-### 2.4 
+Директорія `/proc` знаходиться в кореневому каталозі файлової системи. 
+Це віртуальна файловa система, яка створюється ядром Linux під час роботи системи. Її не існує фізично на диску.
 
-### 2.5 
+#### Призначення:
+* Отримання інформації про процеси.
+* Отримання системної інформації.
+* Перегляду параметрів ядра.
 
-### 2.6 
+#### Характеристика вмісту:
+* Каталоги з номерами (наприклад `/proc/1234`) — це процеси (PID).
+* /proc/version — версія ядра
+* /proc/uptime — час роботи системи
 
-### 2.7 
+Переглядати текстові файли командою `cat`
+```Bash
+cat /proc/version
+```
+
+### 2.2 — Виведення інформації поточних сеансів користувачів командами `who` та `w`.
+
+<p align="center">
+ <img width="968" height="209" src="https://github.com/user-attachments/assets/f56f5fbc-a823-42f7-ad59-2ba73cb78119"/>
+ <br>
+</p>
+
+`who` — показує, хто увійшов у систему.
+
+`w` — показує активних користувачів та що вони роблять.
+
+### 2.3 — Комбінації клавіш у терміналі
+
+| Комбінація | Дія |
+| :--- | :--- |
+| `Ctrl + C` | Завершити поточний процес |
+| `Ctrl + D` | Вийти з оболонки / передати EOF |
+| `Ctrl + Z` | Призупинити процес (перевести в background suspended) |
+
+### 2.4 — Різниця фонового процесу від звичайного
+
+| Звичайний (foreground) | Фоновий (background) | Використання |
+| :--- | :--- | :--- |
+| Виконується в поточному терміналі | Працює без блокування терміналу | Запуск довготривалих задач |
+| Блокує введення команд | Дозволяє вводити інші команди | Сервери |
+
+### 2.5 — Команди `jobs`, `bg`, `fg`
+
+| `jobs` | `bg` | `fg` |
+| :--- | :--- | :--- |
+| Показує список фонових або призупинених задач поточної оболонки | Відновлює призупинений процес у фоновому режимі | Переводить процес на передній план |
+
+### 2.6 — Перегляд всіх фонових процесів командою `top`
+
+<p align="center">
+ <img width="400" height="476,176470588" src="https://github.com/user-attachments/assets/55fb5647-a97f-49c2-9b93-8205c65b3435" />
+ <br><br>
+</p>
+
+### 2.7 — Призупинка, відновлення та перезапуск фонового процесу
+
+#### Призупинити:
+Якщо в foreground -> `Ctrl + Z`
+
+#### Відновити:
+У foreground -> `fg`
+У background -> `bg`
+
+#### Перезапустити:
+Якщо завершений — запустити знову командою.
 
 ---
 
 ## 3. Виконані команди в терміналі
-### 3.1
 
-### 3.2
+### 3.1 — Запуск `top`
+<h3>
+  <details>
+    <summary>Перегляд</summary>
+    <table>
+      <tr>
+        <td><img width="400" height="476,176470588" src="https://github.com/user-attachments/assets/55fb5647-a97f-49c2-9b93-8205c65b3435"</td>
+      </tr>
+    </table>
+  </details>
+</h3>
 
-### 3.3
+#### Показує:
+* PID
+* USER
+* %CPU
+* %MEM
+* TIME
+* COMMAND
 
-### 3.4
+Найбільш активні процеси — ті, що мають найбільше значення %CPU.
 
-### 3.5
+### 3.2 — Призупинити `top`
+Використовується комбінація `Ctrl + Z`.
 
-### 3.6
+### 3.3 —
 
-### 3.7
+### 3.4 —
+
+### 3.5 —
+
+### 3.6 —
+
+### 3.7 —
 
 ---
 
-
 ## Відповіді на контрольні запитання
 
-### 1.Директорія `/proc` у Linux є віртуальною файловою системою, яка створюється ядром під час роботи системи. Вона не зберігається на диску, а відображає поточний стан процесів і системних ресурсів. У ній міститься інформація про запущені процеси, використання пам’яті, процесора та параметри ядра.
+1. The `/proc` directory in Linux is a virtual file system created and maintained by the kernel. It does not contain real files stored on disk. Instead, it provides a dynamic interface to kernel data structures and system information.
 
-### 2.Щоб визначити, який із трьох процесів використовує найбільше пам’яті, можна скористатися командами `top` або `ps` із сортуванням за використанням пам’яті. У виводі відображається відсоток споживання оперативної пам’яті (%MEM), що дозволяє побачити, який процес займає найбільший обсяг і яку частку від загальної пам’яті він використовує.
+It stores information about running processes (each process has a directory named by its PID), system memory usage, CPU details, kernel version, uptime, mounted devices, and other runtime system parameters. It is mainly used for system monitoring, diagnostics, and kernel configuration.
 
-### 3.The hierarchy of parent processes in Linux can be displayed using the pstree or ps -ejH command. All processes form a tree structure that starts from PID 1 (usually systemd or init). Each process has its own PID and a parent process ID (PPID).
+2. To dynamically monitor memory usage, you can use the top command. It provides real-time information about running processes, including memory usage in percentage (%MEM).
 
-### 4.Команда `top` відображає інформацію про процеси в режимі реального часу та постійно оновлює дані, тоді як `ps` показує одноразовий знімок стану процесів у момент виконання команди.
+You can identify the three processes by their names or PIDs and compare their %MEM values. The process with the highest percentage is using the most memory.
 
-### 5.`htop` є розширеною версією `top` з більш зручним інтерфейсом, кольоровим відображенням, можливістю керування процесами за допомогою клавіш та переглядом дерева процесів.
+Another option is the `ps aux --sort=-%mem` command, which displays processes sorted by memory usage in descending order. The %MEM column shows the percentage of total RAM consumed by each process.
 
-### 6.У мобільній ОС Android моніторинг процесів здійснюється через системні налаштування, диспетчер застосунків і розділ для розробників, де можна переглянути активні служби та використання ресурсів.
+3. The process hierarchy can be displayed using the `pstree` command or `ps -ejH`.
 
-### 7.Android supports terminal-based process management through ADB or terminal applications. Users can view running processes and terminate them, although advanced control requires root access.
+In Linux, all processes form a tree structure. The root of this tree is usually the `systemd` process (PID 1). Every other process has a parent process, identified by PPID (Parent Process ID).
 
-### 8.It is possible to install third-party applications for process monitoring on a mobile device. These tools provide information about CPU usage, memory consumption, and running applications, helping users analyze and control system performance.
+The hierarchy shows how processes are created. For example, systemd starts a login service, which starts a shell (bash), which can then start other programs such as top. This parent-child structure forms a process tree.
 
+4. The `top` command provides a real-time, continuously updating view of system processes. It is interactive and allows sorting or filtering while running.
+
+The `ps` command provides a static snapshot of processes at the exact moment the command is executed. It is not interactive and requires specific options to filter or format output.
+
+In short, `top` is dynamic monitoring, while `ps` is a one-time process listing.
+
+5. What additional features does `htop` provide compared to `top`?
+
+The `htop` utility provides a more user-friendly and advanced interface compared to `top`. It includes colorized output, easier navigation, mouse support, scrolling capability, and a tree view of processes. It also allows users to select and manage processes more conveniently using function keys.
+
+6. In a typical Android-based mobile operating system, process monitoring tools include the Task Manager, Running Services in Developer Options, memory usage statistics, and battery usage monitoring. These components allow users to view active applications, check RAM consumption, force stop apps, and analyze which applications consume system resources.
+
+7. Android supports terminal-based process management through tools such as ADB (Android Debug Bridge) or terminal emulator applications. Using ADB, users can access the device shell and execute commands like `ps`, `top`, and `kill`. However, advanced process control may require root access.
+
+In contrast, iOS does not normally allow terminal-based process management unless the device is jailbroken.
+
+8. Yes, it is possible to install third-party applications for monitoring and managing processes. On Android devices, applications such as advanced task managers, system monitoring tools, and terminal emulators can provide detailed information about CPU usage, RAM consumption, and background processes. Some advanced tools require root access to provide full functionality.
 
 ---
 
 ## Висновок (Conclusion)
 
+In this laboratory work, the principles of process management in a Linux operating system were studied and analyzed. The structure and purpose of the `/proc` virtual file system were examined, including the type of system and process information it provides. Methods for viewing active user sessions using commands such as `who` and `w` were explored.
+
+Practical skills in managing processes were developed through the use of terminal key combinations (`Ctrl + C`, `Ctrl + D`, `Ctrl + Z`) and commands such as `jobs`, `bg`, `fg`, `ps`, and `top`. The difference between foreground and background processes was identified, and their practical applications were explained.
+
+During the practical part, the `top` command was used to monitor system activity and identify the most resource-consuming processes. The process suspension, resumption (in both foreground and background modes), and termination procedures were successfully performed.
+
+Overall, this work helped to better understand Linux process control mechanisms and improved practical skills in working with system monitoring and task management tools.
 
 ---
 
 ## Team Contributions
-- **Member 1 ([DimitriyArch])**: Completed the work in a terminal.
-- **Member 2 ([PashaGo2007])**: Added English command table and conclusions, formatted the Markdown file.
-- **Member 3 ([Tingem])**: Answered the control questions.
+- **Member 1 ([DimitriyArch])**: Completed the work in a terminal and answered the questions.
+- **Member 2 ([PashaGo2007])**: Formatted the Markdown file and completed tasks of preliminary preparation.
+- **Member 3 ([Tingem])**: Answered the control questions and did conclusion.
