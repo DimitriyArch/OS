@@ -18,9 +18,13 @@ Links to the necessary resources:
 * [Cisco Network Academy](https://www.netacad.com/dashboard)
 * [Network Development Group](https://portal.netdevgroup.com/learn)
 
+---
+
 ### <p align="center">Linux Popular Distribution Family
 <p align="center"><img width="300" height="478,055555556" src="https://github.com/user-attachments/assets/38c2307e-0570-458d-a0d0-ff86be62742e"/>
 </p>
+
+---
   
 <div align="center">
   
@@ -54,6 +58,8 @@ Links to the necessary resources:
 ```
 
 </div>
+
+---
 
 #### Linux Acceleration Command 
 
