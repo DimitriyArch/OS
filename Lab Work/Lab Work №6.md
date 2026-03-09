@@ -1,1 +1,301 @@
 
+# Лабораторна робота №6
+## Тема: Команди Linux для архівування та стиснення даних. Робота з текстом
+
+## **Мета роботи:**
+1. Отримання практичних навиків роботи з командною оболонкою Bash.
+2. Знайомство з базовими командами для архівування та стиснення даних.
+3. Знайомство з базовими діями при роботі з текстом у терміналі.
+
+---
+
+## Матеріальне забезпечення
+* ЕОМ типу IBM PC.
+* ОС сімейства Windows та віртуальна машина Virtual Box (Oracle).
+* ОС GNU/Linux (Arch).
+* Сайт мережевої академії Cisco netacad.com та його онлайн курси по Linux
+
+---
+
+## 1. Завдання для попередньої підготовки
+
+### 1.1 — Словник (Dictionary)
+
+| Term | Explanation |
+| :--- | :--- |
+| Compression | Data compression the process of reducing the size of a file |
+| Archiving | Combining several files into a single archive |
+| Lossless compression | Compression without loss, which allows the data to be fully restored |
+| Lossy compression | Compression with loss, where part of the information is removed |
+| Archive | File that contains other files |
+| Pipe | A channel for transferring data between commands |
+| Standard input (stdin) | The standard input stream |
+| Standard output (stdout) | The standard output stream |
+| Standard error (stderr) | The stream of error messages |
+| Filter | A command that processes text from the input stream |
+
+### 1.2 — Відповіді на питання
+
+#### 1.2.1 — Призначення команд `tar`, `xz`, `zip`, `bzip`, `gzip`
+
+
+
+#### 1.2.2 — Приклади архівування та стиснення
+
+
+
+#### 1.2.3 — Призначення команд `cat`, `less`, `more`, `head`, `tail`
+
+
+
+#### 1.2.4 — Принципи роботи каналів, потоків і фільтрів
+
+
+
+#### 1.2.5 — Призначення команди `grep`
+
+
+
+---
+
+## 2. Хід роботи 
+
+### 2.1 — Приклади команд з NDG Lab 9 & 10
+
+| Назва команди | Її призначення та функціональність |
+| :--- | :--- |
+| `mkdir mybackups ` | Створення нової директорії `mybackups` у домашньому каталозі користувача |
+| `tar -cvf mybackups/udev.tar /etc/udev` | Команда `tar` використовується для об’єднання кількох файлів в один файл. В даному випадку вміст директорії `/etc/udev` буде збережено в архів `udev.tar` у директорії `mybackups`. Параметр `-c` повідомляє команді `tar` створити файл tar. Параметр `-v` означає "verbose", який наказує команді `tar` продемонструвати, що вона робить. Параметр `-f` використовується для вказівки назви файлу tar. |
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+| `` ||
+
+### 2.2 — Ознайомлення з командою `tar`
+
+Основні аргументи команди `tar`
+
+| Аргумент | Призначення |
+| :--- | :--- |
+| `-c` | Створити архів |
+| `-x` | Розпакувати архів|
+| `-v` | Показати процес |
+| `-f` | Ім'я файлу |
+| `-z` | Використати gzip |
+| `-j` | Використати bzip2 |
+| `-t` | Список вмісту |
+
+| Команда | Її призначення та функціональність |
+| :--- | :--- |
+| `tar -cvf archive.tar lab1` | Створює архів `archive.tar`, який містить файл `lab1` |
+| `tar -cvf archive.tar lab1 lab2 folder1` | Створює архів `archive.tar`, що містить `lab1`, `lab2` та каталог `folder1` |
+| `tar -tvf archive.tar` | Показує список файлів, що знаходяться всередині архіву |
+| `tar -xvf archive.tar` | Розпаковує всі файли з архіву `archive.tar` у поточний каталог |
+| `tar -cjvf archive.tar.bz2 folder` | Створення архіву tar зі стисненням `bzip2` |
+| `tar -xjvf archive.tar.bz2` | Розпаковує архів bzip2 |
+| `tar -czvf archive.tar.gz folder` | Параметр `-z` означає використання `gzip` |
+| `ar -xzvf archive.tar.gz` | Розпаковує gzip-архів |
+
+
+### 2.3 — Перенаправлення потоків виведення в bash
+
+| Команда | Що виконує команда? |
+| :--- | :--- |
+| `cmd 1> file` | Перенаправляє стандартний потік виведення (`stdout`) у файл |
+| `cmd > file` | Те саме що `1>` — запис stdout у файл |
+| `cmd 2> file` | Перенаправляє потік помилок (stderr) у файл |
+| `cmd >> file` | Додає `stdout` у кінець файлу |
+| `cmd &> file` | Перенаправляє `stdout` і `stderr` у файл |
+| `cmd > file 2>&1` | Записує `stdout` і `stderr` у один файл |
+| `cmd >> file 2>&1` | Додає `stdout` і `stderr` у кінець файлу |
+| `cmd 2>&1 > /dev/null` | `stderr` направляється у `stdout`, `stdout` відправляється у `/dev/null` |
+| `cmd 2> /dev/null` | Приховує повідомлення про помилки |
+| `cmd1  cmd2` | Результат cmd1 передається як вхід для cmd2 |
+| `cmd1 2>&1 cmd2` | `stdout` і `stderr` cmd1 передаються у cmd2 |
+
+### 2.4 — Приклад команд та їх дії
+
+| Команда (контейнер команд) | Що виконує команда? | Який потік перенаправлення? |
+| :--- | :--- | :--- |
+| `echo "It is a new story." > story` | Записує текст у файл story (створює або перезаписує) | stdout -> файл |
+| `date > date.txt` | Записує поточну дату у файл `date.txt` | stdout -> файл |
+| `cat file1 file2 file3 > bigfile` | Об’єднує файли і записує результат у `bigfile` | stdout -> файл |
+| `ls -l >> directory` | Додає результат команди до файлу `directory` | stdout -> файл (append) |
+| `sort < file1_unsorted > file2_sorted` | Сортує вміст файлу і записує у новий файл | stdin <- файл, stdout -> файл |
+| `find -name '*.txt' > file.txt 2> /dev/null` | Шукає `.txt` файли, результат записує у файл, помилки приховує | stdout -> файл, stderr -> /dev/null |
+| `cat file1_unsorted  sort > file2_sorted` | Передає вміст файлу через `pipe` до команди сортування | pipe + stdout -> файл |
+| `cat myfile  grep student  wc -l` | Підраховує кількість рядків, що містять слово `student` | pipe між командами |
+
+---
+
+## Відповіді на контрольні запитання
+
+### 1. Порівняльна характеристика процесів стискання та архівування
+
+Стискання (compression) — це процес зменшення розміру файлу за допомогою спеціальних алгоритмів. Мета стискання — економія дискового простору та зменшення обсягу даних для передачі по мережі.
+
+Архівування (archiving) — це процес об’єднання кількох файлів і каталогів у один файл-архів для зручності зберігання або передачі.
+
+| Характеристика | Стискання | Архівування |
+| :--- | :--- | :--- |
+| Основна мета | Зменшення розміру файлу | Об'єднання файлів |
+| Результат | Стиснений файл | Архів |
+| Збереження структури каталогів | Не завжди | Так |
+| Приклади | `gzip`, `bzip2`, `xz` | `tar` |
+
+Часто ці два процеси використовуються разом, наприклад `tar` + `gzip`, щоб створити архів і одночасно його стиснути.
+
+### 2. Інші програми для стискання та архівування в Linux
+
+Окрім розглянутих у роботі команд, в Linux існує багато інших програм.
+
+#### Приклади:
+
+- 7-Zip (7z) — Сучасний архіватор з дуже високим рівнем стискання. Має підтримку багатьох форматів, працює з великими файлами.
+
+```Bash
+7z a archive.7z folder
+```
+
+- rar / unrar — Популярний формат архівів. Має високу ефективність стискання та підтримку відновновлення пошкоджених архівів.
+
+- lzma — Алгоритм стискання з високим коефіцієнтом стиснення.
+
+- ar — Використовується для створення архівів бібліотек у Linux.
+
+### 3. Порівняння алгоритмів стискання
+
+| Алгоритм | Використання | Особливості |
+| :--- | :--- | :--- |
+| DEFLATE | gzip | Швидке стискання |
+| Burrows-Wheeler | bzip2 | Краще стискає, але повільніше |
+| LZMA2 | xz | Дуже високий рівень стискання |
+
+| Алгоритм | Швидкість | Ступінь стискання |
+| :--- | :--- | :--- |
+| gzip | Найшвидший | Середній |
+| bzip2 | Середній | Кращий |
+| xz | Повільний | Найефективніший |
+
+### 4. Програмні засоби для архівування на мобільному телефоні на базі Android
+
+#### ZArchiver
+
+Мобільний архіватор для Android.
+
+Можливості:
+- створення та розпакування архівів
+- підтримка форматів `zip`, `rar`, `7z`, `tar`, `gzip`
+- робота з паролями
+
+#### RAR
+
+Офіційна мобільна версія WinRAR.
+
+Особливості:
+- підтримка `rar` і `zip`
+- відновлення архівів
+- тестування файлів
+
+#### WinZip Mobile
+
+Мобільний архіватор для Android та iOS.
+
+Функції:
+- робота з `zip`
+- інтеграція з хмарними сервісами
+
+### 5. Програмні засоби для архівування у Windows
+
+#### Windows має вбудовану підтримку ZIP архівів.
+
+Функції:
+- створення `zip` архівів
+- розпакування файлів
+- інтеграція з файловим менеджером.
+
+#### WinRAR
+
+Один із найпопулярніших архіваторів.
+
+Особливості:
+- підтримка `rar` і `zip`
+- високий рівень стискання
+- захист архівів паролем.
+
+#### 7-Zip (7z)
+
+Безкоштовний архіватор з відкритим кодом.
+
+Переваги:
+- високий коефіцієнт стискання
+- підтримка багатьох форматів
+- безкоштовне використання.
+
+### 6. Використання архівування та стискання для резервування даних
+
+#### Архівування та стискання широко використовуються для резервного копіювання (backup).
+
+Основні переваги:
+- зменшення розміру резервних копій
+- збереження структури каталогів
+- зручність передачі та зберігання даних
+- можливість швидкого відновлення системи.
+
+#### Використання у системному адмініструванні
+
+Архівування використовується для:
+- створення резервних копій серверів
+- перенесення файлів між системами
+- архівування логів
+- зберігання конфігураційних файлів
+- розповсюдження програмного забезпечення.
+
+### 7. Призначення файлу `/dev/null`
+
+`/dev/null` — це спеціальний файл у Linux, який називається "null device".
+
+Його призначення — приймати будь-які дані та одразу їх відкидати.
+
+Тобто вся інформація, яка перенаправляється у цей файл, не зберігається і не відображається.
+
+#### Приклад використання
+
+Приховування помилок:
+
+```Bash
+command 2> /dev/null
+```
+Приховування всього виводу:
+```Bash
+command > /dev/null 2>&1
+```
+Це часто використовується у скриптах, коли потрібно ігнорувати непотрібний вивід або помилки.
+
+---
+
+## Висновок (Conclusion)
+
+During this laboratory work practical skills of working with the Bash command-line interface in the Linux operating system were obtained. The basic commands used for archiving and compressing data, such as `tar`, `gzip`, `bzip2`, and `xz`, were studied. Their purpose, main parameters, and practical usage for creating, viewing, and extracting archives were analyzed.
+
+In addition, the work included studying text processing commands in the terminal, such as `cat`, `less`, `more`, `head`, `tail`, and `grep`, which are widely used for viewing, searching, and manipulating text files in Linux systems.
+
+Special attention was paid to the principles of `nput/output streams, redirection, pipes, and filters in the Bash shell. These mechanisms allow users to combine commands and efficiently process data directly in the terminal.
+
+As a result of the laboratory work, the fundamental concepts of data compression, archiving, and text processing in Linux were understood, and practical experience in using these tools for system administration and everyday work in a Linux environment was gained.
+
+---
+
+## Team Contributions
+- **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and answered the questions.
+- **Member 2 — [PavloGo2007](https://github.com/PashaGo2007)**: Completed tasks of preliminary preparation and answered the questions.
+- **Member 3 — [Tingem](https://github.com/Tingem)**: Answered the control questions and did conclusion.
