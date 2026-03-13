@@ -126,9 +126,7 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
     </table>
   </details>
   
-  
   ---
-  
   
   <details>
     <summary>Скріншот 2</summary>
@@ -139,9 +137,7 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
     </table>
   </details>
   
-  
   ---
-  
   
   <details>
     <summary>Скріншот 3</summary>
@@ -152,9 +148,7 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
     </table>
   </details>
   
-  
   ---
-  
   
   <details>
     <summary>Скріншот 4</summary>
@@ -165,9 +159,7 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
     </table>
   </details>
   
-  
   ---
-  
   
   <details>
     <summary>Скріншот 5</summary>
@@ -178,9 +170,7 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
     </table>
   </details>
   
-  
   ---
-  
   
   <details>
     <summary>Скріншот 6</summary>
@@ -191,9 +181,7 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
     </table>
   </details>
   
-  
   ---
-  
   
   <details>
     <summary>Скріншот 7</summary>
@@ -204,9 +192,7 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
     </table>
   </details>
   
-  
   ---
-  
   
   <details>
     <summary>Скріншот 8</summary>
@@ -216,10 +202,10 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
       </tr>
     </table>
   </details>
-</h3>
-  
-  ---
+</h3> 
 
+  ---
+  
 ### 2.3 — Опис дій команд `cd`
 
 | Команда | Дія |
@@ -323,4 +309,3 @@ The acquired knowledge makes it possible to work effectively with the Linux file
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a terminal.
 - **Member 2 — [PavloGo2007](https://github.com/PashaGo2007)**: Completed tasks of preliminary preparation and answered the questions.
-- **Member 3 — [Tingem](https://github.com/Tingem)**: Answered the control questions and did conclusion.
