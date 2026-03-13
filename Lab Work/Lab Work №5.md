@@ -115,29 +115,110 @@ FHS (Filesystem Hierarchy Standard) — це стандарт, який визн
 
 ### 2.2 — Робота в терміналі
 
-```
-                        *                         
-                       ***                        
-                      *****                       
-                     ********                     
-                    **********                    
-                  ****** -*****                   
-                 ******    *****                  
-                *****=      *****                 
-               *****         *****=               
-              *****           ******              
-            -*****             :*****             
-           =*****     @@+        *****            
-          *****:#   .@@@@@     @+ *****           
-         *****  @@   :@@@     @@   *****          
-        *****   -@= %@@@     *@@    ******        
-       *****     @@ @@@@@@@@@@%@@    .*****       
-     =*****       @@@@@@@.  @          *****      
-    *****:        -@ @@@@.  @           *****     
-   *******************************************    
-  **********************************************  
-   ::::::--:-:::---::-::-:----:----:::::::::::    
-```
+---
+<h3>
+  <details>
+    <summary>Скріншот 1</summary>
+    <table>
+      <tr>
+        <td><img width="" height="" src="https://github.com/user-attachments/assets/3dc8ceee-b9ed-4ac3-bb91-9e4d79d22fed"></td>
+      </tr>
+    </table>
+  </details>
+  
+  
+  ---
+  
+  
+  <details>
+    <summary>Скріншот 2</summary>
+    <table>
+      <tr>
+        <td><img width="" height="" src="https://github.com/user-attachments/assets/44e52e30-df12-4271-bb65-ebf855643958"></td>
+      </tr>
+    </table>
+  </details>
+  
+  
+  ---
+  
+  
+  <details>
+    <summary>Скріншот 3</summary>
+    <table>
+      <tr>
+        <td><img width="" height="" src="https://github.com/user-attachments/assets/9e5f5331-f4cb-4652-90c8-ddbb2274a27e"></td>
+      </tr>
+    </table>
+  </details>
+  
+  
+  ---
+  
+  
+  <details>
+    <summary>Скріншот 4</summary>
+    <table>
+      <tr>
+        <td><img width="" height="" src="https://github.com/user-attachments/assets/6764ec81-5369-4052-9377-006154405b1a"></td>
+      </tr>
+    </table>
+  </details>
+  
+  
+  ---
+  
+  
+  <details>
+    <summary>Скріншот 5</summary>
+    <table>
+      <tr>
+        <td><img width="" height="" src="https://github.com/user-attachments/assets/a0ffa014-d5fa-4c95-84cc-a48b975f7309"></td>
+      </tr>
+    </table>
+  </details>
+  
+  
+  ---
+  
+  
+  <details>
+    <summary>Скріншот 6</summary>
+    <table>
+      <tr>
+        <td><img width="" height="" src="https://github.com/user-attachments/assets/839c7088-c1a5-4e58-b7cc-0f4dfcf78257"></td>
+      </tr>
+    </table>
+  </details>
+  
+  
+  ---
+  
+  
+  <details>
+    <summary>Скріншот 7</summary>
+    <table>
+      <tr>
+        <td><img width="" height="" src="https://github.com/user-attachments/assets/09b7f72f-4a6f-4eaa-8821-d39ab6a027fa"></td>
+      </tr>
+    </table>
+  </details>
+  
+  
+  ---
+  
+  
+  <details>
+    <summary>Скріншот 8</summary>
+    <table>
+      <tr>
+        <td><img width="" height="" src="https://github.com/user-attachments/assets/74b11998-09ab-466e-aa0e-9e66a5c7adb5"></td>
+      </tr>
+    </table>
+  </details>
+</h3>
+  
+  ---
 
 ### 2.3 — Опис дій команд `cd`
 
