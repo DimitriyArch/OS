@@ -321,7 +321,15 @@ Sticky Bit — це спеціальний дозвіл, який обмежує
 
 ## Висновок (Conclusion)
 
+Particular attention was paid to access control mechanisms such as chmod, chown and chgrp, which provide flexible control over access to files and directories.
 
+The setuid, setgid and ‘sticky bit’ access rights were examined as advanced security mechanisms that alter the standard behaviour of access rights to ensure controlled execution, manage shared resources and protect shared directories.
+
+Practical exercises demonstrated how to create users and groups, assign ownership, configure access rights, and verify access behaviour for different users. Experiments with directories, scripts, and symbolic links showed how Linux ensures security compliance in real-world scenarios.
+
+
+
+Translated with DeepL.com (free version)
 
 ---
 
