@@ -359,6 +359,11 @@ cat -s lab8.txt
 
 ## Висновок (Conclusion)
 
+The mechanisms of user and group management in GNU/Linux and their role in access control were examined. It was confirmed that the use of UID and GID, together with the group-based access model, provides a flexible way to implement security policies at the operating system level.
+
+Standard administrative tools were practically applied, covering the full lifecycle of account management: creation, modification, permission assignment, and deletion. The use of the UPG model demonstrated its effectiveness in ensuring user isolation and simplifying access control management.
+
+The results indicate that the built-in Linux tools are sufficient for implementing basic security requirements and are suitable for practical use in system administration tasks.
 
 
 ---
