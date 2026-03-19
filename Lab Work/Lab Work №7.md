@@ -253,7 +253,11 @@ mount /dev/sdb1 /mnt/usb
 
 ## Висновок (Conclusion)
 
+Practical application of scripting tools demonstrated the ability to create, modify, and execute scripts for performing routine operations and retrieving system information. Additionally, methods for determining hardware configuration were explored using standard system utilities, allowing for analysis of CPU, memory, storage devices, and connected hardware components.
 
+Key concepts related to system architecture, including disk partitioning schemes (MBR and GPT) and the mounting process, were also considered as essential elements of system operation.
+
+The results confirm that Bash scripting and built-in Linux utilities provide an effective approach to task automation and system analysis, forming a fundamental part of system administration practices.
 
 ---
 
