@@ -252,10 +252,14 @@ nc 192.168.10.103 1234
 
 ## Висновок (Conclusion)
 
+In this work-case, the tasks focused on cloning, networking, and data exchange between virtual machines. Cloning a VM creates an exact copy, either full or linked, and exporting it uses formats like OVF or OVA for use in other virtualization environments.
 
+Virtual networking types were explored: NAT allows internet access via the host while isolating the VM, Bridged connects the VM directly to the physical network, Host-only limits communication to the host and VMs, and Internal Network allows VM-to-VM communication only. Network setup between the original VM and its clone included configuring IP addresses, testing connectivity, streaming content to confirm internet access, sending messages, and transferring files through a shared folder.
+
+Data exchange between the host OS and VMs was achieved via shared folders or drag-and-drop, allowing files to move from the host to VMs and back, enabling efficient interaction between virtual and main operating systems.
 
 ---
 
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a VirtualBox.
-- **Member 2 — [PavloGo2007](https://github.com/PashaGo2007)**:
+- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Does Conclusions and completed 4th ex.
