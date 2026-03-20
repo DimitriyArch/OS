@@ -312,7 +312,7 @@ sudo pacman -S vscodium
   </details>
 </h3>
 
-Якщо не вдається встановити через Flathub, є також можливість зробити це через термінал
+Якщо не вдається встановити через Flathub, є також можливість зробити це через термінал.
 
 ```Bash
 flatpak install flathub com.github.wwmm.easyeffects
@@ -320,7 +320,7 @@ flatpak install flathub com.github.wwmm.easyeffects
 
 <h3>
   <details>
-    <summary>Скріншот</summary>
+    <summary>Скріншоти</summary>
     <table>
       <tr>
         <td><img width="1912" height="1030" src="https://github.com/user-attachments/assets/c76ce193-0ac3-4d86-864d-d5f8ccc515f6"/></td>
