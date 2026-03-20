@@ -336,10 +336,14 @@ flatpak install flathub com.github.wwmm.easyeffects
 
 ## Висновок (Conclusion)
 
+Working with package managers is an essential skill for effectively using Linux systems. It allows users to quickly install, update, and remove software while maintaining system stability and security. Understanding the concepts of packages and repositories helps to better manage software sources and ensures that applications are obtained from trusted locations.
 
+Different Linux distributions use different package managers, but they all provide similar core functionality such as searching for packages, installing software, handling dependencies, and performing system updates. This standardization makes it easier to adapt to new environments.
+
+Using terminal-based package managers is often more powerful and flexible than graphical application stores, especially for advanced users and developers. However, graphical tools remain useful for beginners due to their simplicity and ease of use.
 
 ---
 
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a VirtualBox.
-- **Member 2 — [PavloGo2007](https://github.com/PashaGo2007)**:
+- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Does the conclusion and helped at dimitry`s work.
