@@ -198,21 +198,43 @@ nc 192.168.10.103 1234
 
 У VirtualBox можна створити папку, спільну для хоста та віртуальної машини.
 
-Етапи:
-- 
--
-- 
-- 
-- 
+#### Етапи:
 
-Після цього папка буде доступна у файловій системі віртуальної машини.
+- Додавання спільної папки в ВМ
+
+<h3>
+  <details>
+    <summary>Скріншоти</summary>
+    <table>
+      <tr>
+        <td><img width="874" height="624" src="https://github.com/user-attachments/assets/911ab9a7-bbb9-4334-9733-c7f533b643a8"/></td>
+        <td><img width="912" height="625" src="https://github.com/user-attachments/assets/5a0bedf4-5804-4faa-bb9e-9a1cd618e252"/></td>
+      </tr>
+    </table>
+  </details>
+</h3>
+
+- Встановлення `virtualbox-guest-utils` та додавання користувача до групи `vboxsf`
 
 <h3>
   <details>
     <summary>Скріншот</summary>
     <table>
       <tr>
-        <td></td>
+        <td><img width="876" height="625" src="https://github.com/user-attachments/assets/53c8cbaf-0be5-47ac-a8d3-a6f5a11cf9a4"/></td>
+      </tr>
+    </table>
+  </details>
+</h3>
+
+- Після цього папка буде доступна у файловій системі віртуальної машини
+
+<h3>
+  <details>
+    <summary>Скріншот</summary>
+    <table>
+      <tr>
+        <td><img width="876" height="625" src="https://github.com/user-attachments/assets/16cccbba-c665-4213-b69d-fe98388e89c2"/></td>
       </tr>
     </table>
   </details>
@@ -229,7 +251,7 @@ nc 192.168.10.103 1234
     <summary>Скріншот</summary>
     <table>
       <tr>
-        <td></td>
+        <td><img width="1594" height="619" src="https://github.com/user-attachments/assets/f0086989-6768-48d0-bf31-ca8ececcc4ee"/></td>
       </tr>
     </table>
   </details>
@@ -242,11 +264,39 @@ nc 192.168.10.103 1234
     <summary>Скріншот</summary>
     <table>
       <tr>
-        <td></td>
+        <td><img width="1594" height="619" src="https://github.com/user-attachments/assets/a5f029ea-ce21-4bf1-8720-8bd2431366df"/></td>
       </tr>
     </table>
   </details>
 </h3>
+
+---
+
+## Словник (Vocabulary)
+
+1. Virtual Machine (VM) — software-based emulation of a physical computer that runs an operating system and applications.
+
+2. Virtualization — process of creating virtual versions of hardware platforms, storage devices, or network resources.
+
+3. Clone (Virtual Machine Clone) — copy of an existing virtual machine, including its operating system, settings, and data.
+
+4. Full Clone — completely independent copy of a virtual machine that does not rely on the original VM.
+
+5. Linked Clone — virtual machine that shares virtual disk files with the original VM, saving storage space.
+
+6. Export Appliance — process of packaging a virtual machine into a file (usually OVA) for transfer or backup.
+
+7. Netcat (nc) — networking utility used for reading and writing data across network connections.
+
+8. Shared Folder — directory that is accessible from both the host system and virtual machines.
+
+9. OVA (Open Virtual Appliance) — file format used to distribute virtual machines, containing configuration and disk data.
+
+10. Samba — software suite that enables file and print sharing between Linux and Windows systems.
+
+11. Host OS (Host Operating System) — main operating system installed on the physical computer.
+
+12. Guest OS (Guest Operating System) — operating system running inside a virtual machine.
 
 ---
 
@@ -262,4 +312,4 @@ Data exchange between the host OS and VMs was achieved via shared folders or dra
 
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a VirtualBox.
-- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Does Conclusions and completed 4th ex.
+- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Did Conclusions, helped with 4 item and writted Vocabulary.
