@@ -334,6 +334,30 @@ flatpak install flathub com.github.wwmm.easyeffects
 
 ---
 
+## Словник (Vocabulary)
+
+1. Package — packaged archive containing software, metadata, and installation scripts used for installing applications on a Linux system.
+
+2. Repository — centralized online storage that contains software packages and related metadata, used by package managers to download and install programs.
+
+3. Package Manager — tool that automates the process of installing, updating, configuring, and removing software packages in an operating system.
+
+4. Dependency — library or package required by another program to function properly.
+
+5. Binary Package — precompiled software package ready to be installed without the need for compilation.
+
+6. Source Package — package that contains source code, which must be compiled before installation.
+
+7. Repository Mirror — copy of a repository hosted on different servers to improve download speed and availability.
+
+8. Cache — temporary storage where downloaded packages are kept for reuse.
+
+9. Rollback — process of reverting the system or a package to a previous state.
+
+10. Versioning — practice of assigning unique version numbers to software packages to track updates, improvements, and compatibility changes over time.
+
+---
+
 ## Висновок (Conclusion)
 
 Working with package managers is an essential skill for effectively using Linux systems. It allows users to quickly install, update, and remove software while maintaining system stability and security. Understanding the concepts of packages and repositories helps to better manage software sources and ensures that applications are obtained from trusted locations.
@@ -346,4 +370,4 @@ Using terminal-based package managers is often more powerful and flexible than g
 
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a VirtualBox.
-- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Does the conclusion and helped at dimitry`s work.
+- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Did Conclusions and helped at DimitryArch`s work.
