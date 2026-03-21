@@ -15,7 +15,7 @@
 - Логування виконання задач
 - Обробка помилок і повторні спроби
 
-### Порівняння: Windows vs Linux
+### Порівняння: Windows та Linux
 
 | Windows (Task Scheduler) | Linux (Cron) |
 | :--- | :--- |
@@ -32,7 +32,7 @@
 
 Cron читає файл crontab, де описані задачі у форматі:
 
-```Bash
+```
 * * * * * команда
 │ │ │ │ │
 │ │ │ │ └── день тижня (0-7)
@@ -44,10 +44,22 @@ Cron читає файл crontab, де описані задачі у форма
 
 ### Основні команди
 
+#### Редагувати задачі
+
 ```Bash
-crontab -e -> Редагувати задачі
-crontab -l -> Переглянути задачі
-crontab -r -> Видалити задачі
+crontab -e
+```
+
+#### Переглянути задачі
+
+```Bash
+crontab -l
+```
+
+#### Видалити задачі
+
+```Bash
+crontab -r
 ```
 
 ### Приклади налаштування
@@ -130,24 +142,13 @@ crontab -r -> Видалити задачі
 crontab -e
 ```
 
-<h3>
-  <details>
-    <summary>Скріншот</summary>
-    <table>
-      <tr>
-        <td></td>
-      </tr>
-    </table>
-  </details>
-</h3>
-
 #### Запуск Firefox о 08:00
 
 ```Bash
 0 8 * * * firefox
 ```
 
-#### Двічі в день (очистка)
+#### Двічі в день чистка
 
 ```Bash
 0 9,21 * * * rm -rf /home/petryshaka/tmp/*
@@ -239,7 +240,13 @@ WantedBy=timers.target
 
 ```Bash
 sudo systemctl daemon-reexec
+```
+
+```Bash
 sudo systemctl enable myscript.timer
+```
+
+```Bash
 sudo systemctl start myscript.timer
 ```
 
