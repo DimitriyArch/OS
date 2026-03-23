@@ -319,51 +319,51 @@ cat -s lab8.txt
 
 ## Відповіді на контрольні запитання
 
-### 1.
+### 1. Як пов'язані між собою команди `cat` та `tac`?
 
+Команди `cat` та `tac` пов’язані тим, що обидві виводять вміст файлів у термінал, але роблять це по-різному: `cat` читає файл зверху вниз (порядок рядків як у файлі), а `tac` читає файл знизу вгору, тобто виводить рядки у зворотному порядку.
 
+### 2. Що робить команда `ss`?
 
-### 2.
+Команда `ss` використовується для перегляду інформації про мережеві сокети у системі: відкриті TCP/UDP порти, стан з’єднань, адреси та порти локальних і віддалених хостів.
 
+### 3. В чому відмінність між командами `ps --forest` та `pstree`?
 
+Команди `ps --forest` та `pstree` показують процеси ієрархічно. Різниця у відображенні: `ps --forest` показує дерево процесів у текстовій табличній формі в терміналі, а `pstree` виводить процеси у вигляді дерева з графічним відступом імен процесів.
 
-### 3.
+### 4. У яких каталогах зберігаються налаштування системи?
 
+Налаштування системи зберігаються переважно у каталогах /etc (загальні конфігурації) та /var (змінні файли конфігурацій, логи).
 
+### 5. У яких каталогах можна знайти встановлені в системі програми, доступні для користувача?
 
-### 4.
+Встановлені програми для користувача зазвичай знаходяться у /usr/bin, /usr/local/bin.
 
+### 6. У яких каталогах можна знайти встановлені системні програми і програми призначені для виконання суперкористувачем?
 
+Встановлені програми для користувача зазвичай знаходяться у /usr/bin, /usr/local/bin, а системні програми та утиліти для суперкористувача – у /sbin, /usr/sbin.
 
-### 5.
+### 7. Поясніть призначення команд `ping`, `ifconfig`, `traceroute`.
 
+| Назва команди | Її призначення та функціональність |
+| :--- | :--- |
+| `ping` | Перевіряє доступність віддаленого хоста через ICMP і вимірює час відгуку. |
+| `ifconfig` | Показує або налаштовує параметри мережевих інтерфейсів (IP-адресу, маску, MAC-адресу тощо). |
+| `traceroute` | Визначає маршрут пакетів до віддаленого хоста, показуючи проміжні вузли та час проходження. |
 
+### 8. Як називаються мережеві інтерфейси в Linux?
 
-### 6.
+Мережеві інтерфейси в Linux зазвичай називаються як eth0, eth1, enp3s0, wlan0 або lo для локального інтерфейсу (loopback).
 
+### 9. Як за допомогою команди `ifconfig` вивести параметри тільки одного мережевого інтерфейсу (наприклад, eth1), а не всіх?
 
-
-### 7.
-
-
-
-### 8.
-
-
-
-### 9.
-
-
+Команда `ifconfig eth1`, це покаже лише інформацію про eth1, без інших інтерфейсів.
 
 ---
 
 ## Висновок (Conclusion)
 
-The mechanisms of user and group management in GNU/Linux and their role in access control were examined. It was confirmed that the use of UID and GID, together with the group-based access model, provides a flexible way to implement security policies at the operating system level.
-
-Standard administrative tools were practically applied, covering the full lifecycle of account management: creation, modification, permission assignment, and deletion. The use of the UPG model demonstrated its effectiveness in ensuring user isolation and simplifying access control management.
-
-The results indicate that the built-in Linux tools are sufficient for implementing basic security requirements and are suitable for practical use in system administration tasks.
+During this practical work, We acquired hands-on experience working with the Bash shell, which allowed me to execute commands, manage files, and automate tasks efficiently. We became familiar with the basic structures for storing system information, including processes, memory usage, log files, and kernel messages. Additionally, We gained an understanding of the Filesystem Hierarchy Standard (FHS) and its organization of directories and files. Finally, We explored essential tasks related to network configuration, which provided a foundational understanding of managing network settings on a Linux system.
 
 
 ---
