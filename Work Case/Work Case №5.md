@@ -205,10 +205,10 @@ lpr filename
 
 ## Висновок (Conclusion)
 
-
+ In this work, the process of connecting and using peripheral devices in a Linux operating system was examined using the examples of a USB flash drive and a printer. Special attention was given to the mounting mechanism, which allows the system to make external storage devices accessible through the file system, enabling users to read from and write to them. The differences between Linux and Windows in handling peripheral devices were also highlighted, showing that Linux provides more flexibility and transparency, while Windows focuses on automation and user convenience. Practical tasks demonstrated how to work with devices both through a graphical interface and the terminal, confirming that Linux offers multiple approaches to achieve the same result and giving the user greater control over system operations.
 
 ---
 
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the practical part.
-- **Member 2 — [PavloGo2007](https://github.com/PashaGo2007)**:
+- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Did Conclusions, helped with work and writted Vocabulary.
