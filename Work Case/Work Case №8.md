@@ -630,10 +630,10 @@ espeak "I'm Mr. Robot — Eliot"
 
 ## Висновок (Conclusion)
 
-
+In this work, the capabilities of the Linux operating system without a graphical interface were explored, demonstrating that even complex and seemingly GUI-dependent tasks can be effectively performed through the terminal. Various tools and packages were used to manage files, browse the web, read email, play music, download torrents, view images, and organize schedules, proving that the command line environment is highly versatile and powerful. Additionally, common administrative tasks such as text editing and system monitoring were implemented using specialized terminal-based programs, highlighting their efficiency and flexibility compared to graphical counterparts. The work also showcased entertaining and interactive terminal features, emphasizing that the Linux environment is not only functional but also engaging. Overall, the results confirm that Linux provides a comprehensive and efficient command-line ecosystem capable of handling both professional and everyday tasks without the need for a graphical interface.
 
 ---
 
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a terminal.
-- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**:
+- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Did Conclusions, helped at DimitryArch`s work and writted Vocabulary.
