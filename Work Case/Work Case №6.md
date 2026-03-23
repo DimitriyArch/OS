@@ -254,10 +254,10 @@ su - guest1
 
 ## Висновок (Conclusion)
 
-
+In this work, different command-line interpreters in a Linux operating system were installed and explored, demonstrating how the system can support multiple shells with distinct features and capabilities. Each interpreter provides its own advantages, allowing users to choose the most suitable environment for their tasks. Additionally, user management was implemented by creating multiple users and organizing them into groups according to their roles, which reflects a real-world approach to system administration. Default shells were assigned based on group responsibilities, including restricting access for certain categories of users, highlighting the importance of security and access control in Linux systems. Practical examples of working within different shells confirmed that each group can efficiently perform tasks relevant to their needs, while the system maintains flexibility, structure, and controlled access.
 
 ---
 
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work in a terminal.
-- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: 
+- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Did Conclusions, helped at DimitryArch`s work and writted Vocabulary.
