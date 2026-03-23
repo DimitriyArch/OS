@@ -291,10 +291,10 @@ sudo systemctl start myscript.timer
 
 ## Висновок (Conclusion)
 
-
+In this work, the concept of task scheduling in operating systems was explored, with particular attention to its role in automating routine processes and improving system efficiency. The main functions of task schedulers were analyzed, including executing commands at specified times, repeating tasks at defined intervals, and managing system operations without user intervention. A comparison between Windows and Linux showed that while both systems provide scheduling tools, Linux offers more flexibility and precision through utilities like Cron, whereas Windows emphasizes a more user-friendly graphical approach. The principles of working with Cron were studied, including its configuration and syntax, as well as possible alternatives that provide extended functionality or easier management. Practical implementation involved scheduling various tasks on a Linux virtual machine, such as automated execution at specific times, repeated daily operations, conditional execution based on weekdays or time ranges, and periodic tasks at different intervals. Additionally, an alternative scheduler was installed and used to perform similar operations, confirming that Linux provides multiple powerful tools for task automation and system management.
 
 ---
 
 ## Team Contributions
 - **Member 1 — [DimitriyArch](https://github.com/DimitriyArch)**: Formatted the Markdown file and сompleted the work with scripts.
-- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**:
+- **Member 2 — [PashaGo2007](https://github.com/PashaGo2007)**: Did Conclusions, helped at DimitryArch`s work and writted Vocabulary.
